@@ -1,11 +1,15 @@
 package enumeracao;
 
 public class Cliente {
-    private String nome;
 
+
+
+    private TipoPagamento tipoPagamento;
+    private String nome;
     private TipoCliente tipoCliente;
 
-    public Cliente(String nome, TipoCliente tipoCliente) {
+    public Cliente(TipoPagamento tipoPagamento, String nome, TipoCliente tipoCliente) {
+        this.tipoPagamento = tipoPagamento;
         this.nome = nome;
         this.tipoCliente = tipoCliente;
     }
@@ -13,8 +17,10 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente{" +
-                "nome='" + nome + '\'' +
-                ", tipoCliente=" + tipoCliente +
+                "tipoPagamento=" + tipoPagamento +
+                ", nome='" + nome + '\'' +
+                ", tipoCliente=" + tipoCliente.NOME +
+                ", tipoClienteInt=" + tipoCliente.VALOR +
                 '}';
     }
 
