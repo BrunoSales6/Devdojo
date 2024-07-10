@@ -11,10 +11,5 @@ import java.util.List;
 @Log4j2
 
 public class ConnectionFactoryTest {
-    public static void main(String[] args) {
-        List<Producer> all = ProducerService.findByName("Mad");
-        log.info(all);
 
-
-    }
 }

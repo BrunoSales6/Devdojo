@@ -29,4 +29,25 @@ public class ProducerService {
     public static List<Producer>findByName(String nome){
         return ProducerRepository.findByName(nome);
     }
+    public static List<Producer>findByNamePrepared(String nome){
+        return ProducerRepository.findByNamePrepared(nome);
+    }
+
+    public static void showMetaData(){
+        ProducerRepository.showMetaData();
+    }
+    public static void shoeDriverMetaData(){
+        ProducerRepository.showDriverMetaData();
+    }
+    public static void showTypeScrollWorking(){
+        ProducerRepository.showTypeScrollWorking();
+    }
+
+    public static List<Producer>findByNameAndUpdateToUpperCase(String nome){
+        return ProducerRepository.findByNameAndUpdateToUpperCase(nome);
+    }
+    public static List<Producer>findByNameAndInsertWhenNotFound(String nome){
+        return ProducerRepository.findByNameAndInsertWhenNotFound(nome);
+    }
+
 }
